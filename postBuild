@@ -1,5 +1,5 @@
 #!/bin/bash
-
+cmake --version
 curl https://sh.rustup.rs -sSf | sh -s -- --default-toolchain=stable -y
 
 echo '. $HOME/.cargo/env' >> ~/.bashrc
