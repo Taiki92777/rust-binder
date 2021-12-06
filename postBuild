@@ -1,5 +1,12 @@
 #!/bin/bash
 cmake --version
+#cmake version 3.10.2
+#need to upgrade, at least >= 3.12 to use --parallel
+cmake .
+make      
+make install
+#check installed cmake version
+cmake --version
 curl https://sh.rustup.rs -sSf | sh -s -- --default-toolchain=stable -y
 
 echo '. $HOME/.cargo/env' >> ~/.bashrc
