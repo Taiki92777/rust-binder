@@ -1,16 +1,16 @@
 #!/bin/bash
-cmake --version
-#cmake version 3.10.2
-#need to upgrade, at least >= 3.12 to use --parallel
-sudo apt install build-essential libssl-dev
-wget https://github.com/Kitware/CMake/releases/download/v3.20.2/cmake-3.20.2.tar.gz
-tar -zxvf cmake-3.20.2.tar.gz
-cd cmake-3.20.2
-./bootstrap
-make 
-sudo make install 
-#check installed cmake version
-cmake --version
+# cmake --version
+# #cmake version 3.10.2
+# #need to upgrade, at least >= 3.12 to use --parallel
+# sudo apt install build-essential libssl-dev
+# wget https://github.com/Kitware/CMake/releases/download/v3.20.2/cmake-3.20.2.tar.gz
+# tar -zxvf cmake-3.20.2.tar.gz
+# cd cmake-3.20.2
+# ./bootstrap
+# make 
+# sudo make install 
+# #check installed cmake version
+# cmake --version
 curl https://sh.rustup.rs -sSf | sh -s -- --default-toolchain=stable -y
 
 echo '. $HOME/.cargo/env' >> ~/.bashrc
