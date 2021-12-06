@@ -1,4 +1,4 @@
-FROM ar90n/dev_env
+FROM ar90n/lab/dev_env
 MAINTAINER Masahiro Wada <argon.argon.argon@gmail.com>
 
 ARG user
